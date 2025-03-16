@@ -36,3 +36,6 @@ tasks.withType<Test> {
 kotlin {
     jvmToolchain(21)
 }
+tasks.withType<org.springframework.boot.gradle.tasks.run.BootRun> {
+    mainClass.set("at.aau.serg.SpringAppKt")
+}
